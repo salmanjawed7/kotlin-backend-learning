@@ -12,7 +12,7 @@ class ProductDAO {
 
     suspend fun productByUpc(upc: Int): Product? {
         return query {
-            ProductTable.select { ProductTable.upc eq upc }.firstOrNull()?.toProduct()
+            ProductTable.select { ProductTable.upc.eq(upc) }.firstOrNull()?.toProduct()
         }
     }
 
