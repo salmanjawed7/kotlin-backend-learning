@@ -1,0 +1,27 @@
+Kotlin backend learning
+
+./mvnw = maven wrapper
+./gradlew = gradle wrapper
+
+To run a spring boot project
+./mvnw sprint-boot:run
+
+To access the project you ran:
+localhost:8080/storefront
+
+To run a spring boot project
+./mvnw sprint-boot:stop
+
+You can also run from the ide by opening the Application class.
+Currently its SpringBootStoreDemoApplication
+
+To create a new ktor project
+google start ktor io
+
+it will open a project generator
+- type project name
+- Open advanced settings
+- change website name
+- Go to next
+- Choose routing plugin
+- Download zip and open in intellij
