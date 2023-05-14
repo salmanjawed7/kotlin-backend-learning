@@ -1,5 +1,6 @@
 package com.contentmgmtsystem
 
+import com.contentmgmtsystem.plugins.configureAuthentication
 import com.contentmgmtsystem.plugins.configureCallLogging
 import com.contentmgmtsystem.plugins.configureContentNegotation
 import com.contentmgmtsystem.plugins.configureRouting
@@ -13,6 +14,7 @@ fun main() {
 }
 
 fun Application.module() {
+    configureAuthentication()
     configureRouting()
     configureCallLogging()
     configureContentNegotation()
